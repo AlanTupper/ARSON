@@ -2,8 +2,9 @@ ARSON-Spec
 ==========
 
 A Reasonably Small Object Notation
+---------------------------------
 
-"It tastes like burning."
+*"It tastes like burning."*
 
 <h3>Overview:</h3>
 <p>ARSON is a binary data exchange format inspired by <a href="http://bsonspec.org">BSON</a>.</p>
