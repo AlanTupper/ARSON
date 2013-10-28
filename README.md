@@ -1,4 +1,4 @@
-ARSON-Spec
+ARSON
 ==========
 
 A Reasonably Small Object Notation
