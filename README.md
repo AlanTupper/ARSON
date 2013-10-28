@@ -5,20 +5,20 @@ A Reasonably Small Object Notation
 
 "It tastes like burning."
 
-			<h3>Overview:</h3>
-			<p>ARSON is a binary data exchange format inspired by <a href="http://bsonspec.org">BSON</a>.</p>
+<h3>Overview:</h3>
+<p>ARSON is a binary data exchange format inspired by <a href="http://bsonspec.org">BSON</a>.</p>
 			
-			<p>Like BSON, it creates a binary representation of JSON-like serialized data structures.  It is largely schemaless, which does make it less efficient than formats such as ProtocolBuffers.  This lack of efficiency is traded for an increased degree of flexibility and expressiveness.  Unlike BSON, ARSON is not designed to be a format for data storage, but rather one for rapid, transactional data streams. The intended use case for ARSON is one in which large volumes of arbitrary data structures must be transacted and parsed quickly. ARSON isn't designed to be prudent, or even particularly sane. It's designed for punting updates back and forth. Consider yourself notified.</p>
+<p>Like BSON, it creates a binary representation of JSON-like serialized data structures.  It is largely schemaless, which does make it less efficient than formats such as ProtocolBuffers.  This lack of efficiency is traded for an increased degree of flexibility and expressiveness.  Unlike BSON, ARSON is not designed to be a format for data storage, but rather one for rapid, transactional data streams. The intended use case for ARSON is one in which large volumes of arbitrary data structures must be transacted and parsed quickly. ARSON isn't designed to be prudent, or even particularly sane. It's designed for punting updates back and forth. Consider yourself notified.</p>
 			
-			<p>ARSON's priorities are:</p>
-			<ul>
-				<li><b>Efficiency:</b> It should be fast and efficient to transmit, encode, and decode.</li>
-				<li><b>Flexibility:</b> It should be able to be utilized across a wide range of use cases and applications.</li>
-				<li><b>Expressiveness:</b> It should exhibit JSON-like expressiveness, and provide facilities for specialization.</li>
-				<li><b>Traversability:</b> It should be fast for a parser to traverse a unkown document and quickly ascertain it's properties.</li>
-			</ul>
+<p>ARSON's priorities are:</p>
+<ul>
+	<li><b>Efficiency:</b> It should be fast and efficient to transmit, encode, and decode.</li>
+	<li><b>Flexibility:</b> It should be able to be utilized across a wide range of use cases and applications.</li>
+	<li><b>Expressiveness:</b> It should exhibit JSON-like expressiveness, and provide facilities for specialization.</li>
+	<li><b>Traversability:</b> It should be fast for a parser to traverse a unkown document and quickly ascertain it's properties.</li>
+</ul>
 			
-			<h3>Features:</h3>
+<h3>Features:</h3>
 			
 			<p>Here are some of the data types ARSON supports:</p>
 			<ul>
