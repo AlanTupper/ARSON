@@ -30,13 +30,18 @@ A Reasonably Small Object Notation
 	<li>Booleans</li>
 	<li>Strings</li>
 	<li>UUIDs, Hashes, and raw Binary</li>
-	<li>Metadata Tags</li>
-	<li>User-Defined Types</li>
+	<li>Metadata Tags (proposed)</li>
+	<li>User-Defined Types (proposed)</li>
 </ul>
 			
 <p>One of the main oddities of ARSON is its use of nibbles rather than bytes as its primary unit of measurement. There is a 1 nibble type address space, and length measurements are by and large expressed in terms of nibbles. This may appear to be an odd choice, but was done so to streamline the format in terms of byte efficiency and to enforce smaller document sizes.  Given the intent of ARSON to be a format optimized for streaming, these are worthy goals. The maximum size of a ARSON document is roughly 32kB.</p>
 			
 <p>ARSON introduces several concepts not found within BSON and removes many implementation-specific types found within BSON.  The end result is hopefully a format which more expressive and less anchored to a specific application. </p>
+
+
+<h3>Proposed Features:</h3>
+
+<p>These features are at the blue-sky phase and may or may not actually make it into ARSON.</p>
 			
 <p>ARSON has a specific type for User-defined Types. It provides facilities for an application to express up to 16 arbitrary types. This is designed for efficiency at the cost of universal parseability. For instance, it allows a 3D application to define a compact representation for Vectors, or Rotations that abstains from the usual key:value semantics. In addition to a subtype specifier, UserTypes also contain a length value which maintains the parseability of the larger data structure. Given the flexibility and potential ambiguity UserTypes provide, it's prudent to ignore UserType values found in the wild unless their subtypes are definitively known. </p>
 			
